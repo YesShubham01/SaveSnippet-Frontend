@@ -4,7 +4,7 @@ import Button from './HomePage Components/Button';
 import InputTextComponent from './HomePage Components/InputTextComponent'
 import SelectComponent from './HomePage Components/SelectComponent';
 import InputTextArea from './HomePage Components/InputTextArea';
-
+import SnippetBox from '../components/SnippetBox'
 
 
 function HomePage2() {
@@ -31,7 +31,8 @@ function HomePage2() {
     const languageOptions = ["C++", "Java", "JavaScript", "Python"];
 
     return (
-        <div className="mx-auto my-5 max-w-4xl md:my-6 bg-white rounded-xl shadow-2xl overflow-hidden ">
+        <div className='logo'>
+            <div className="mx-auto my-5 max-w-4xl md:my-6 bg-white rounded-xl shadow-2xl overflow-hidden ">
             <div className="grid grid-cols-1 md:grid-cols-2">
                 {/* Contact Info */}
                 <div className="px-5 py-6 text-gray-900 md:px-8">
@@ -81,7 +82,7 @@ function HomePage2() {
                     </div>
                 </div>
                 {/* Product List */}
-                <div className="bg-gray-100 px-5 py-6 md:px-8">
+                <div className="bg-gray-200 px-5 py-6 md:px-8">
                     <div className="flow-root">
                         <InputTextArea
                             text="Source Code:"
@@ -89,12 +90,14 @@ function HomePage2() {
                             setValue={setSourceCode}
                             selectedLanguage={preferredLanguage}
                         />
+                        {/* <SnippetBox/> */}
                     </div>
                     <hr className="mt-6 border-gray-200" />
 
                     <Button />
                 </div>
             </div>
+        </div>
         </div>
     )
 }
