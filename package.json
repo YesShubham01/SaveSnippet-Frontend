@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@codaworks/react-glow": "^1.0.6",
+    "lucide-react": "^0.359.0"
+  }
+}
