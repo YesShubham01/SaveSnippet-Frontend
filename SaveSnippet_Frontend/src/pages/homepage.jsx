@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import Button from './HomePage Components/Button';
-import InputTextComponent from './HomePage Components/InputTextComponent'
-import SelectComponent from './HomePage Components/SelectComponent';
-import InputTextArea from './HomePage Components/InputTextArea';
 import HomePage2 from './HomePage2'
+import { Link } from 'react-router-dom';
+
 
 function HomePage() {
     const [username, setUsername] = useState('');
@@ -31,7 +29,6 @@ function HomePage() {
     return (
         <div style={{ padding: '20px' }}>
             <h1 className='logoFont'>SaveSnippet</h1>
-            
             <HomePage2 />
         </div>
     );

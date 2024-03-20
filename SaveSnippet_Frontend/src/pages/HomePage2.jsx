@@ -31,7 +31,7 @@ function HomePage2() {
     const languageOptions = ["C++", "Java", "JavaScript", "Python"];
 
     return (
-        <div className="mx-auto my-4 max-w-4xl md:my-6 bg-white rounded-xl shadow-2xl overflow-hidden ">
+        <div className="mx-auto my-5 max-w-4xl md:my-6 bg-white rounded-xl shadow-2xl overflow-hidden ">
             <div className="grid grid-cols-1 md:grid-cols-2">
                 {/* Contact Info */}
                 <div className="px-5 py-6 text-gray-900 md:px-8">
